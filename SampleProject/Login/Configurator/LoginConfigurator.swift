@@ -27,6 +27,8 @@ class LoginModuleConfigurator {
 
         let interactor = LoginInteractor()
         interactor.output = presenter
+        interactor.xmppController = XMPPWorker(hostname: "xmpp.jp")
+        interactor.xmppController?.xmppWorkerOutput = interactor
 
         presenter.interactor = interactor
         viewController.output = presenter

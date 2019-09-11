@@ -10,6 +10,7 @@ class LoginInteractor {
     
     weak var output: LoginInteractorOutput!
     var isAuthenticated: Bool = false
+    var xmppController : XMPPWorker?
 }
 
 
@@ -24,5 +25,18 @@ extension LoginInteractor : LoginInteractorInput {
         } else {
             self.output.loginVerified(success: false, error: "Something")
         }
+    }
+    
+    func checkCredentials(hostname: String, userJIDString: String, password: String) {
+        print("LoginInteractor -> checkCreds")
+        
+        try! self.xmppController?.connect(userJIDString: userJIDString, password: password)
+        
+    }
+}
+
+extension LoginInteractor : XMPPWorkerOutput {
+    func authenticated(success: Bool, error: String?) {
+        print("LoginInteractor -> authenticated")
     }
 }

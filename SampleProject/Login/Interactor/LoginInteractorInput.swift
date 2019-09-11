@@ -10,4 +10,5 @@ import Foundation
 
 protocol LoginInteractorInput {
     func checkCredentials(username: String, password: String)
+    func checkCredentials(hostname: String, userJIDString: String, password: String)
 }

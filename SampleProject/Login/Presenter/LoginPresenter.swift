@@ -20,7 +20,7 @@ class LoginPresenter: LoginModuleInput{
 extension LoginPresenter : LoginViewOutput {
     func verifyCreds(username: String, password: String) {
         print("LoginPresenter -> verifyCreds")
-        self.interactor.checkCredentials(username: username, password: password)
+        self.interactor.checkCredentials(hostname: "xmpp.jp", userJIDString: "\(username)@xmpp.jp", password: password)
     }
 }
 
