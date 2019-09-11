@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a project.  Please Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7Y-Ob-SgW">
+                                <rect key="frame" x="36" y="80" width="342" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXq-ws-m0f">
+                                <rect key="frame" x="24" y="145" width="366" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kkU-v3-nCT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORK-5O-3nA">
+                                <rect key="frame" x="24" y="214" width="366" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UCQ-mr-fSv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFd-3T-Jc8">
+                                <rect key="frame" x="16" y="303" width="382" height="50"/>
+                                <color key="backgroundColor" red="0.18472093484790475" green="0.68107651120724244" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vYT-1w-aU2"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnActions:" destination="BYZ-38-t0r" eventType="touchDown" id="HTi-9A-kbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ORK-5O-3nA" secondAttribute="trailing" constant="24" id="2h4-cI-uzH"/>
+                            <constraint firstItem="m7Y-Ob-SgW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="5fH-iX-yaq"/>
+                            <constraint firstItem="ORK-5O-3nA" firstAttribute="top" secondItem="TXq-ws-m0f" secondAttribute="bottom" constant="24" id="65J-GU-kqe"/>
+                            <constraint firstItem="m7Y-Ob-SgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="6cS-vu-bJK"/>
+                            <constraint firstItem="JFd-3T-Jc8" firstAttribute="top" secondItem="ORK-5O-3nA" secondAttribute="bottom" constant="44" id="6vb-ku-GMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JFd-3T-Jc8" secondAttribute="trailing" constant="16" id="8b1-Pn-v9D"/>
+                            <constraint firstItem="ORK-5O-3nA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Hke-JD-Pbk"/>
+                            <constraint firstItem="TXq-ws-m0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RZi-Q0-TJU"/>
+                            <constraint firstItem="TXq-ws-m0f" firstAttribute="top" secondItem="m7Y-Ob-SgW" secondAttribute="bottom" constant="24" id="fBa-dt-445"/>
+                            <constraint firstItem="JFd-3T-Jc8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gJe-pn-vYk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JFd-3T-Jc8" secondAttribute="bottom" constant="16" id="hzW-uj-r27"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m7Y-Ob-SgW" secondAttribute="trailing" constant="36" id="jM0-9C-eHC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TXq-ws-m0f" secondAttribute="trailing" constant="24" id="lrg-Zi-aOr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="JFd-3T-Jc8" id="xdl-Fy-Qcr"/>
+                        <outlet property="passwordTF" destination="ORK-5O-3nA" id="54l-hQ-rEg"/>
+                        <outlet property="usernameTF" destination="TXq-ws-m0f" id="Y0Q-Et-rKy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="kgi-QF-3xC" customClass="LoginModuleInitializer" customModule="SampleProject" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loginViewController" destination="BYZ-38-t0r" id="ME6-dY-dDN"/>
+                    </connections>
+                </customObject>
+            </objects>
+        </scene>
+    </scenes>
+</document>
